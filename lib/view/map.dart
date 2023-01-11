@@ -12,11 +12,13 @@ import 'package:sos/controller/controller.dart';
 import 'package:sos/utils/constant.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../models/Place.dart';
 import '../utils/widgets.dart';
 
 class CustomMap extends StatefulWidget {
   String? type;
-   CustomMap({Key? key, this.type}) : super(key: key);
+  Place? place;
+   CustomMap({Key? key, this.type,this.place}) : super(key: key);
 
   @override
   State<CustomMap> createState() => _CustomMapState();

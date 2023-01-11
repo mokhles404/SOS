@@ -18,6 +18,7 @@ class category extends StatefulWidget {
 class _categoryState extends State<category> {
 
   List<Place>? Places=<Place>[];
+
   bool loading =true;
   @override
   void initState() {
@@ -30,94 +31,115 @@ class _categoryState extends State<category> {
   Widget build(BuildContext context) {
   Size size = MediaQuery.of(context).size;
     Widget Customchoice(Place place){
-      return Stack(
-          clipBehavior: Clip.none,
-        children: [
-          Container(
-            margin: const EdgeInsets.symmetric(vertical: 30),
-            // padding: EdgeInsets.only(left: 50),
-            alignment: Alignment.center,
-            width: size.width*0.8,
-            height: size.height*0.1,
-            decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(16),
-              gradient: const LinearGradient(
-                begin: Alignment(-1,-1),
-                end: Alignment(1,1),
-                colors: [
-                 Color(0xFFE6E6E6),
-                 Color(0xFFFFFFFF)
+      return InkWell(
+        onTap: ()=> Navigator.push(context, MaterialPageRoute(builder: (ctx)=>Detail_Screen(type:widget.type,place:place))),
+
+        child: Stack(
+            clipBehavior: Clip.none,
+          children: [
+            Container(
+              margin: const EdgeInsets.symmetric(vertical: 30),
+              // padding: EdgeInsets.only(left: 50),
+              alignment: Alignment.center,
+              width: size.width*0.8,
+              height: size.height*0.1,
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(16),
+                gradient: const LinearGradient(
+                  begin: Alignment(-1,-1),
+                  end: Alignment(1,1),
+                  colors: [
+                   Color(0xFFE6E6E6),
+                   Color(0xFFFFFFFF)
+                  ]
+                ),
+                boxShadow: const [
+                  BoxShadow(
+                    color: Color(0xFFCCCCCC),
+                    offset: Offset(20,20),
+                    spreadRadius: -25,
+                    blurRadius: 60
+                  ),
+                  BoxShadow(
+                    color: Color(0xFFFFFFFF),
+                    offset: Offset(-20,-20),
+                    blurRadius: 60,
+                    spreadRadius: -20,
+
+                  ),
                 ]
               ),
-              boxShadow: const [
-                BoxShadow(
-                  color: Color(0xFFCCCCCC),
-                  offset: Offset(20,20),
-                  spreadRadius: -25,
-                  blurRadius: 60
-                ),
-                BoxShadow(
-                  color: Color(0xFFFFFFFF),
-                  offset: Offset(-20,-20),
-                  blurRadius: 60,
-                  spreadRadius: -20,
-
-                ),
-              ]
+              child: Text( place.name ??"",style: GoogleFonts.racingSansOne(fontSize:
+              place.name!.length>9 ?20
+                  :25),),
             ),
-            child: Text(widget.type =="rondo"?"Rondo": place.name ??"",style: GoogleFonts.racingSansOne(fontSize:
-            place.name!.length>9 ?20
-                :25),),
-          ),
-          Positioned(
-              top: 0,
-              left: -30,
-              width: 95,
-              child:widget.type =="rondo"?
-                  Transform.translate(offset: const Offset(13,25)
-      ,child:               Transform.rotate(angle: 710, child: Image.asset("assets/rondo2.png",),      )
-                    ,
-      )
+            Positioned(
+                top: 0,
+                left: -30,
+                width: 95,
+                child:widget.type =="rondo"?
+                    Transform.translate(offset: const Offset(13,25)
+        ,child:               Transform.rotate(angle: 710, child: Image.asset("assets/h/Hiking Information Board Old.H03.2k.png",),      )
+                      ,
+        )
 
-              // Transform.rotate(angle: 710, child: Image.asset("assets/rondo2.png",),      )
+                // Transform.rotate(angle: 710, child: Image.asset("assets/rondo2.png",),      )
 
 
-                    :Transform.rotate(angle: 660 ,child:Image.asset("assets/vtt.png",),)
+                      :Transform.rotate(angle: 660 ,child:Image.asset("assets/vtt.png",),)
 
 
-      ),
-          Positioned(
-            top:43,
-            right:-12,
-           child: InkWell(
-             // onTap: (){
-             //   print(Places?.first.coordinates?.first.lat);
-             // },
-             onTap: ()=> Navigator.push(context, MaterialPageRoute(builder: (ctx)=>Detail_Screen(type:widget.type,place:place))),
-             child: Container(
-               width: 50,
-                height: 50,
-                decoration:BoxDecoration(
-                  boxShadow: const [
-                    BoxShadow(
-                      color: Color(0xffC9A2A299),
-                      offset: Offset(10,10),
-                      blurRadius: 20
-                    )
-                  ],
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(60)
+        ),
+            Positioned(
+              top:43,
+              right:-12,
+             child: InkWell(
+               // onTap: (){
+               //   print(Places?.first.coordinates?.first.lat);
+               // },
+               onTap: ()=> Navigator.push(context, MaterialPageRoute(builder: (ctx)=>Detail_Screen(type:widget.type,place:place))),
+               child: Container(
+                 width: 50,
+                  height: 50,
+                  decoration:BoxDecoration(
+                    boxShadow: const [
+                      BoxShadow(
+                        color: Color(0xffC9A2A299),
+                        offset: Offset(10,10),
+                        blurRadius: 20
+                      )
+                    ],
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(60)
+                  ),
+                 child: const Icon(Icons.arrow_forward_ios),
                 ),
-               child: const Icon(Icons.arrow_forward_ios),
-              ),
-           )
-          )
+             )
+            )
 
-        ],
+          ],
+        ),
       );
 
     }
+  List<Widget> choice= [
+    Customchoice(Places![0]),
+    Customchoice(Places![1]),
+    Customchoice(Places![2]),
+    Customchoice(Places![3]),
+    Customchoice(Places![4]),
+    Customchoice(Places![5]),
+    Customchoice(Places![6]),
+    Customchoice(Places![7]),
+  ];
+
+  List<Widget> choicevtt= [
+    Customchoice(Places![1]),
+    Customchoice(Places![2]),
+    Customchoice(Places![4]),
+    Customchoice(Places![6]),
+  ];
     return Scaffold(
       body: SafeArea(
       child:loading ? const Center(child: CircularProgressIndicator(color: Colors.redAccent,),)
@@ -205,15 +227,10 @@ class _categoryState extends State<category> {
                   //
                   //   ),
                   // ),
-
-                  Customchoice(Places![0]),
-                  Customchoice(Places![1]),
-                  Customchoice(Places![2]),
-                  Customchoice(Places![3]),
-                  Customchoice(Places![4]),
-                  Customchoice(Places![5]),
-                  Customchoice(Places![6]),
-                  Customchoice(Places![7]),
+                      if(widget.type =="rondo")
+                    ...choice
+                      else
+                      ...choicevtt
 
 
 

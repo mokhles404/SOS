@@ -1,4 +1,5 @@
 
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sos/models/Place.dart';
@@ -91,9 +92,10 @@ void initState() {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        SizedBox(
+                        Expanded(
                             // width: size.width,
-                            child: Text(widget.place?.name ??"no name",style: GoogleFonts.rubik(color: Colors.white,fontSize: 36),textAlign: TextAlign.left,)),
+                            child: AutoSizeText(widget.place?.name ??"no name",style: GoogleFonts.rubik(color: Colors.white,fontSize: 36),maxLines: 1,maxFontSize:36,textAlign: TextAlign.left,)),
+                       const SizedBox(width: 10,),
                         SizedBox(
                             // width: size.width,
                             child:
@@ -108,12 +110,13 @@ void initState() {
 
                               }, color: widget.type =="rondo"? const Color(0xff087aad) : const Color(
                                   0xffffffff)),
-                        )],
+                        )
+                      ],
                     ),
                     SizedBox(height: size.height*0.03,),
                     SizedBox(
                       height: size.height*.12,
-                        child: SingleChildScrollView(child: Text(widget.place?.desc ??"",textAlign:TextAlign.justify,style: GoogleFonts.rubik(color: Colors.white.withOpacity(0.9),fontSize:16)))),
+                        child: SingleChildScrollView(child: Text(widget.place?.desc ??"",textAlign:TextAlign.justify,style: GoogleFonts.rubik(color: Colors.white.withOpacity(0.9),fontSize:14)))),
                     SizedBox(height: size.height*0.05,),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -124,9 +127,9 @@ void initState() {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("Point de départ",style: GoogleFonts.rubik(color: Colors.white.withOpacity(0.9),fontSize: 16)),
+                            Text("Difficulté",style: GoogleFonts.rubik(color: Colors.white.withOpacity(0.9),fontSize: 16)),
                             const SizedBox(height: 10,),
-                            Text("Agreb",style: GoogleFonts.rubik(color: Colors.white.withOpacity(0.9),fontSize: 16),)
+                            Text(widget.place?.difficulte??"",style: GoogleFonts.rubik(color: Colors.white.withOpacity(0.9),fontSize: 16),)
                           ],
 
                         ),
@@ -142,7 +145,7 @@ void initState() {
                           children: [
                             Text("Distance",style: GoogleFonts.rubik(color: Colors.white.withOpacity(0.9),fontSize: 16)),
                             const SizedBox(height: 10,),
-                            Text("6 KM",style: GoogleFonts.rubik(color: Colors.white.withOpacity(0.9),fontSize: 16),textAlign: TextAlign.start,)
+                            Text(widget.place?.longueur ??"",style: GoogleFonts.rubik(color: Colors.white.withOpacity(0.9),fontSize: 16),textAlign: TextAlign.start,)
                           ],
 
                         ),
@@ -157,7 +160,7 @@ void initState() {
             Positioned(
                 bottom: 20,
                 child: InkWell(
-                  onTap: ()=>Navigator.push(context, MaterialPageRoute(builder: (ctx)=>CustomMap(type:widget.type))) ,
+                  onTap: ()=>Navigator.push(context, MaterialPageRoute(builder: (ctx)=>CustomMap(type:widget.type,place:widget.place))) ,
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: SizedBox(
