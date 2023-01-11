@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "waypoints",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "ele": 88.0, "time": "2022\/10\/04 09:11:01.748+00", "name": "Lac 2" }, "geometry": { "type": "Point", "coordinates": [ 10.52958, 34.695297 ] } },
+{ "type": "Feature", "properties": { "ele": 75.0, "time": "2022\/10\/04 09:11:01.748+00", "name": "Lac1" }, "geometry": { "type": "Point", "coordinates": [ 10.550115, 34.696055 ] } },
+{ "type": "Feature", "properties": { "ele": 117.652, "time": "2022\/10\/04 09:11:01.748+00", "name": "START" }, "geometry": { "type": "Point", "coordinates": [ 10.544509, 34.712471 ] } }
+]
+}

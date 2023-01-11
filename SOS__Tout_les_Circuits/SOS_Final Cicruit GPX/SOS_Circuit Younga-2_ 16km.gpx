@@ -1,0 +1,252 @@
+<?xml version="1.0"?>
+<gpx xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="http://www.delorme.com" xmlns="http://www.topografix.com/GPX/1/1">
+  <wpt lat="34.467664" lon="10.410946">
+    <ele>0</ele>
+    <time>2022-11-03T19:17:43.946993Z</time>
+    <name>Start / Finish</name>
+    <desc />
+  </wpt>
+  <wpt lat="34.467195" lon="10.411322">
+    <ele>0</ele>
+    <time>2022-11-05T17:07:44.9033859Z</time>
+    <name>Younga</name>
+    <desc />
+  </wpt>
+  <wpt lat="34.468031" lon="10.411209">
+    <ele>0</ele>
+    <time>2022-11-05T17:08:41.5254802Z</time>
+    <name>  </name>
+    <desc />
+  </wpt>
+  <trk>
+    <name>YOunga 2-16 km</name>
+    <desc>YOunga 2-16 km</desc>
+    <trkseg>
+      <trkpt lat="34.467752" lon="10.411606">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.05Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.466549" lon="10.413237">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.051Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.460711" lon="10.407572">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.052Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.454908" lon="10.403152">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.053Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.449918" lon="10.399547">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.054Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.446910" lon="10.397143">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.055Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.447264" lon="10.396714">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.056Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.447158" lon="10.395641">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.057Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.445388" lon="10.394483">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.058Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.443123" lon="10.391693">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.059Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.441672" lon="10.389891">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.06Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.439619" lon="10.388603">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.061Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.437283" lon="10.386629">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.062Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.432788" lon="10.383840">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.063Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.433461" lon="10.382595">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.064Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.434523" lon="10.381179">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.065Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.435160" lon="10.380664">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.066Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.436753" lon="10.379763">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.067Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.437885" lon="10.378046">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.068Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.439159" lon="10.375214">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.069Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.443194" lon="10.370064">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.07Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.451086" lon="10.360107">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.071Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.459437" lon="10.353842">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.072Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.468778" lon="10.364914">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.073Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.471892" lon="10.368948">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.074Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.473449" lon="10.371523">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.075Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.473661" lon="10.372810">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.076Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.472936" lon="10.373068">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.077Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.474085" lon="10.377316">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.078Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.476456" lon="10.387316">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.079Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.474015" lon="10.388174">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.08Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.474616" lon="10.391092">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.081Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.476031" lon="10.395942">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.082Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.474404" lon="10.396543">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.083Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.476173" lon="10.404181">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.084Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.471680" lon="10.407701">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.085Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.470724" lon="10.407872">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.086Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.470052" lon="10.408301">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.087Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.469486" lon="10.408988">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.088Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.468743" lon="10.410318">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.089Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.468354" lon="10.411091">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.09Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.468053" lon="10.410801">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.091Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.467567" lon="10.410908">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.092Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.467699" lon="10.411423">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.093Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+      <trkpt lat="34.467752" lon="10.411563">
+        <ele>0</ele>
+        <time>2022-11-05T17:28:17.094Z</time>
+        <desc>YOunga 2-16 km</desc>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

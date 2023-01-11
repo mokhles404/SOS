@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "waypoints",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "ele": 0.0, "time": "2022\/11\/04 08:45:31.839+00", "name": "Start\/ Finish" }, "geometry": { "type": "Point", "coordinates": [ 10.972338, 34.655491 ] } },
+{ "type": "Feature", "properties": { "ele": 0.0, "time": "2022\/11\/04 08:46:55.376+00", "name": "Borj Mellita" }, "geometry": { "type": "Point", "coordinates": [ 10.987707, 34.665145 ] } },
+{ "type": "Feature", "properties": { "ele": 0.0, "time": "2022\/11\/04 08:49:30.244+00", "name": "Port Sidi Youssef" }, "geometry": { "type": "Point", "coordinates": [ 10.969929, 34.656514 ] } }
+]
+}

@@ -1,0 +1,21 @@
+{
+"type": "FeatureCollection",
+"name": "waypoints",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "ele": 75.0, "time": "2022\/10\/04 09:11:01.748+00", "name": "Lac1" }, "geometry": { "type": "Point", "coordinates": [ 10.550115, 34.696055 ] } },
+{ "type": "Feature", "properties": { "ele": 117.652, "time": "2022\/10\/04 09:11:01.748+00", "name": "START" }, "geometry": { "type": "Point", "coordinates": [ 10.544509, 34.712471 ] } },
+{ "type": "Feature", "properties": { "ele": 0.0, "time": "2022\/11\/03 19:17:43.947+00", "name": "Start \/ Finish" }, "geometry": { "type": "Point", "coordinates": [ 10.410946, 34.467664 ] } },
+{ "type": "Feature", "properties": { "ele": 0.0, "time": "2022\/11\/04 08:45:31.839+00", "name": "Start\/ Finish" }, "geometry": { "type": "Point", "coordinates": [ 10.972338, 34.655491 ] } },
+{ "type": "Feature", "properties": { "ele": 0.0, "time": "2022\/11\/04 08:46:55.376+00", "name": "Borj Mellita" }, "geometry": { "type": "Point", "coordinates": [ 10.987707, 34.665145 ] } },
+{ "type": "Feature", "properties": { "ele": 0.0, "time": "2022\/11\/04 08:47:51.750+00", "name": "Marsa Machani" }, "geometry": { "type": "Point", "coordinates": [ 11.022592, 34.671264 ] } },
+{ "type": "Feature", "properties": { "ele": 0.0, "time": "2022\/11\/04 08:48:29.625+00", "name": "Mellita" }, "geometry": { "type": "Point", "coordinates": [ 11.032119, 34.652027 ] } },
+{ "type": "Feature", "properties": { "ele": 0.0, "time": "2022\/11\/04 08:48:50.794+00", "name": "Skalla Koblia" }, "geometry": { "type": "Point", "coordinates": [ 11.023622, 34.630277 ] } },
+{ "type": "Feature", "properties": { "ele": 0.0, "time": "2022\/11\/04 08:49:30.244+00", "name": "Port Sidi Youssef" }, "geometry": { "type": "Point", "coordinates": [ 10.969929, 34.656514 ] } },
+{ "type": "Feature", "properties": { "ele": 0.0, "time": "2022\/11\/05 17:07:44.903+00", "name": "Younga" }, "geometry": { "type": "Point", "coordinates": [ 10.411322, 34.467195 ] } },
+{ "type": "Feature", "properties": { "ele": 0.0, "time": "2022\/11\/05 17:08:41.525+00", "name": "  " }, "geometry": { "type": "Point", "coordinates": [ 10.411209, 34.468031 ] } },
+{ "type": "Feature", "properties": { "ele": 0.0, "time": "2022\/11\/05 18:06:43.680+00", "name": "Start \/ Finish" }, "geometry": { "type": "Point", "coordinates": [ 10.746989, 34.724825 ] } },
+{ "type": "Feature", "properties": { "ele": 0.0, "time": "2022\/11\/05 18:09:19.339+00", "name": "Port de Sfax" }, "geometry": { "type": "Point", "coordinates": [ 10.762396, 34.71516 ] } },
+{ "type": "Feature", "properties": { "ele": 0.0, "time": "2022\/11\/05 18:29:48.115+00", "name": "Tour" }, "geometry": { "type": "Point", "coordinates": [ 10.513919, 34.695105 ] } }
+]
+}

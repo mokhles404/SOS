@@ -1,0 +1,682 @@
+<?xml version="1.0"?>
+<gpx xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="http://www.delorme.com" xmlns="http://www.topografix.com/GPX/1/1">
+  <wpt lat="34.467664" lon="10.410946">
+    <ele>0</ele>
+    <time>2022-11-03T19:17:43.946993Z</time>
+    <name>Start / Finish</name>
+    <desc />
+  </wpt>
+  <wpt lat="34.467195" lon="10.411322">
+    <ele>0</ele>
+    <time>2022-11-05T17:07:44.9033859Z</time>
+    <name>Younga</name>
+    <desc />
+  </wpt>
+  <wpt lat="34.468031" lon="10.411209">
+    <ele>0</ele>
+    <time>2022-11-05T17:08:41.5254802Z</time>
+    <name>  </name>
+    <desc />
+  </wpt>
+  <trk>
+    <name>Younga-1_7km</name>
+    <desc>Younga-1_7km</desc>
+    <trkseg>
+      <trkpt lat="34.467643" lon="10.410938">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.541Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.468040" lon="10.411625">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.542Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.467686" lon="10.412046">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.543Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.467407" lon="10.412373">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.544Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.467195" lon="10.412716">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.545Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.466939" lon="10.412990">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.546Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.466700" lon="10.413022">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.547Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.466439" lon="10.412920">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.548Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.466116" lon="10.412668">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.549Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.465948" lon="10.412480">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.55Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.465846" lon="10.412266">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.551Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.465736" lon="10.412185">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.552Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.465607" lon="10.412142">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.553Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.465395" lon="10.411971">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.554Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.465121" lon="10.411724">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.555Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.464802" lon="10.411354">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.556Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.464497" lon="10.411037">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.557Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.464086" lon="10.410608">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.558Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.463763" lon="10.410275">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.559Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.463533" lon="10.410072">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.56Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.463263" lon="10.409814">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.561Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.463161" lon="10.409632">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.562Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.462883" lon="10.409406">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.563Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.462241" lon="10.408902">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.564Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.461954" lon="10.408682">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.565Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.461737" lon="10.408516">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.566Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.461702" lon="10.408409">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.567Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.461525" lon="10.408216">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.568Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.460884" lon="10.407727">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.569Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.460587" lon="10.407524">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.57Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.460450" lon="10.407389">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.571Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.460291" lon="10.407218">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.572Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.459791" lon="10.406933">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.573Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.459698" lon="10.406891">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.574Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.459597" lon="10.406837">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.575Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.459459" lon="10.406649">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.576Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.459331" lon="10.406520">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.577Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.458973" lon="10.406290">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.578Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.458659" lon="10.406038">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.579Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.458407" lon="10.405818">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.58Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.458106" lon="10.405582">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.581Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.457779" lon="10.405399">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.582Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.457522" lon="10.405244">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.583Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.457199" lon="10.405061">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.584Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.456965" lon="10.405002">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.585Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.456739" lon="10.404847">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.586Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.456522" lon="10.404670">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.587Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.456332" lon="10.404541">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.588Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.456164" lon="10.404391">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.589Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.456098" lon="10.404257">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.59Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.456098" lon="10.404117">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.591Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.456191" lon="10.404058">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.592Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.456540" lon="10.403951">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.593Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.456960" lon="10.403811">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.594Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.457491" lon="10.403602">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.595Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.457743" lon="10.403527">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.596Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.458389" lon="10.403302">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.597Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.458637" lon="10.403200">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.598Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.459013" lon="10.403071">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.599Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.459464" lon="10.402889">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.6Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.459813" lon="10.402744">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.601Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.460247" lon="10.402594">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.602Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.460676" lon="10.402427">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.603Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.460915" lon="10.402352">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.604Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.461507" lon="10.402127">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.605Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.462078" lon="10.401886">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.606Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.462529" lon="10.401751">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.607Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.463135" lon="10.401521">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.608Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.463767" lon="10.401263">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.609Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.464917" lon="10.400823">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.61Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.465324" lon="10.400679">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.611Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.465767" lon="10.400496">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.612Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.466235" lon="10.400319">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.613Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.466412" lon="10.400239">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.614Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.467133" lon="10.399970">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.615Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.467735" lon="10.399750">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.616Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.468478" lon="10.399493">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.617Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.469442" lon="10.399166">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.618Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.469857" lon="10.399021">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.619Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.470552" lon="10.398758">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.62Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.471021" lon="10.398592">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.621Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.471879" lon="10.398275">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.622Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.472772" lon="10.397927">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.623Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.473095" lon="10.397835">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.624Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.473502" lon="10.397712">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.625Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.474076" lon="10.397487">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.626Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.474130" lon="10.397412">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.627Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.474355" lon="10.397369">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.628Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.474452" lon="10.397422">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.629Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.474508" lon="10.397586">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.63Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.474601" lon="10.398018">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.631Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.474746" lon="10.398616">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.632Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.474881" lon="10.399203">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.633Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.474919" lon="10.399455">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.634Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.474976" lon="10.399702">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.635Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.475080" lon="10.400048">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.636Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.475213" lon="10.400539">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.637Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.475330" lon="10.401033">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.638Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.475509" lon="10.401754">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.639Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.475567" lon="10.402081">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.64Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.475675" lon="10.402500">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.641Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.475702" lon="10.402634">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.642Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.475784" lon="10.402830">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.643Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.475832" lon="10.402991">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.644Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.475894" lon="10.403320">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.645Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.475991" lon="10.403726">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.646Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.476089" lon="10.404120">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.647Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.475898" lon="10.404310">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.648Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.475697" lon="10.404468">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.649Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.475421" lon="10.404699">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.65Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.475065" lon="10.404951">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.651Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.474406" lon="10.405477">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.652Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.473966" lon="10.405815">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.653Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.473802" lon="10.405949">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.654Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.473086" lon="10.406496">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.655Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.472710" lon="10.406794">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.656Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.472038" lon="10.407309">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.657Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.471708" lon="10.407580">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.658Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.471467" lon="10.407722">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.659Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.471169" lon="10.407824">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.66Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.470817" lon="10.407904">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.661Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.470528" lon="10.407942">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.662Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.470101" lon="10.408199">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.663Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.469630" lon="10.408739">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.664Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.469382" lon="10.409192">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.665Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.469092" lon="10.409693">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.666Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.468590" lon="10.410659">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.667Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.468378" lon="10.411005">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.668Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.468184" lon="10.410941">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.669Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.468033" lon="10.410828">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.67Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+      <trkpt lat="34.467646" lon="10.410939">
+        <ele>0</ele>
+        <time>2022-11-05T17:06:28.671Z</time>
+        <desc>Younga-1_7km</desc>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

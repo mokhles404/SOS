@@ -1,0 +1,996 @@
+<?xml version="1.0"?>
+<gpx xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="http://www.delorme.com" xmlns="http://www.topografix.com/GPX/1/1">
+  <wpt lat="34.696055" lon="10.550115">
+    <ele>75.000</ele>
+    <time>2022-10-04T09:11:01.7480032Z</time>
+    <name>Lac1</name>
+    <desc />
+  </wpt>
+  <wpt lat="34.712471" lon="10.544509">
+    <ele>117.652</ele>
+    <time>2022-10-04T09:11:01.7480032Z</time>
+    <name>START</name>
+    <desc />
+  </wpt>
+  <trk>
+    <name>Circuit Gonna 2</name>
+    <desc>Circuit Gonna 2</desc>
+    <trkseg>
+      <trkpt lat="34.712463" lon="10.544514">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8290461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.712506" lon="10.544225">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8300461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.712435" lon="10.543978">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8310461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.712363" lon="10.543713">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8320461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.712293" lon="10.543419">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8330461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.712168" lon="10.543194">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8340461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.712110" lon="10.542953">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8350461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.712073" lon="10.542598">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8360461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.712052" lon="10.542183">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8370461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.712050" lon="10.541934">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8380461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.712014" lon="10.541579">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8390461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.711819" lon="10.541665">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8400461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.711602" lon="10.541879">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8410461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.711337" lon="10.542113">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8420461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.711105" lon="10.542283">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8430461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.710878" lon="10.542461">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8440461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.710638" lon="10.542714">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8450461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.710443" lon="10.542960">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8460461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.710300" lon="10.542860">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8470461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.710097" lon="10.542622">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8480461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.709920" lon="10.542400">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8490461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.709802" lon="10.542236">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8500461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.709626" lon="10.541976">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8510461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.709437" lon="10.541682">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8520461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.709289" lon="10.541458">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8530461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.709212" lon="10.541484">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8540461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.708967" lon="10.541792">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8550461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.708771" lon="10.541921">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8560461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.708691" lon="10.542196">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8570461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.708520" lon="10.542415">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8580461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.708364" lon="10.542578">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8590461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.708230" lon="10.542852">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8600461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.708045" lon="10.543025">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8610461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.707894" lon="10.543256">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8620461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.707643" lon="10.543504">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8630461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.707356" lon="10.543622">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8640461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.707186" lon="10.543717">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8650461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.706853" lon="10.543855">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8660461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.706582" lon="10.544103">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8670461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.706322" lon="10.544230">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8680461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.706028" lon="10.544385">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8690461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.705947" lon="10.544596">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8700461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.705683" lon="10.544832">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8710461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.705499" lon="10.544930">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8720461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.705405" lon="10.545288">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8730461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.705331" lon="10.545522">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8740461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.705055" lon="10.545765">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8750461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.704830" lon="10.546010">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8760461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.704524" lon="10.546154">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8770461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.704339" lon="10.546004">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8780461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.704221" lon="10.546365">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8790461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.704111" lon="10.546673">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8800461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.703987" lon="10.546847">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8810461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.703704" lon="10.546942">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8820461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.703413" lon="10.547068">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8830461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.703266" lon="10.547211">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8840461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.703082" lon="10.547555">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8850461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.702795" lon="10.547757">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8860461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.702549" lon="10.547865">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8870461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.702294" lon="10.547981">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8880461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.702042" lon="10.548147">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8890461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.701809" lon="10.548266">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8900461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.701541" lon="10.548478">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8910461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.701148" lon="10.548616">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8920461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.700816" lon="10.548660">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8930461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.700495" lon="10.548772">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8940461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.700322" lon="10.548955">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8950461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.700148" lon="10.549132">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8960461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.699810" lon="10.549312">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8970461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.699488" lon="10.549431">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8980461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.699167" lon="10.549512">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.8990461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.699087" lon="10.549438">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9000461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.698912" lon="10.549155">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9010461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.698763" lon="10.548923">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9020461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.698445" lon="10.548714">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9030461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.698243" lon="10.548650">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9040461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.697959" lon="10.548643">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9050461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.697659" lon="10.548681">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9060461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.697463" lon="10.548680">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9070461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.697217" lon="10.548656">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9080461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.696940" lon="10.548604">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9090461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.696677" lon="10.548638">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9100461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.696509" lon="10.548928">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9110461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.696341" lon="10.549061">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9120461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.696298" lon="10.549153">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9130461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.696226" lon="10.549435">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9140461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.696217" lon="10.549053">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9150461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.696362" lon="10.548878">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9160461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.696452" lon="10.548532">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9170461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.696818" lon="10.548269">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9180461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.696942" lon="10.547829">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9190461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.697189" lon="10.547478">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9200461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.697363" lon="10.546887">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9210461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.697440" lon="10.546378">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9220461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.697449" lon="10.546015">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9230461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.697401" lon="10.545752">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9240461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.697368" lon="10.545513">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9250461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.697490" lon="10.545177">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9260461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.697638" lon="10.544544">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9270461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.697787" lon="10.543777">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9280461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.697499" lon="10.543377">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9290461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.697411" lon="10.543047">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9300461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.697595" lon="10.542756">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9310461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.697599" lon="10.542500">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9320461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.697764" lon="10.542410">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9330461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.697957" lon="10.542120">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9340461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.698050" lon="10.541734">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9350461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.698143" lon="10.541166">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9360461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.698290" lon="10.541009">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9370461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.698487" lon="10.540818">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9380461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.698569" lon="10.540547">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9390461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.698740" lon="10.540206">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9400461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.698857" lon="10.539914">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9410461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.698919" lon="10.539705">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9420461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.698969" lon="10.539342">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9430461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.699069" lon="10.539003">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9440461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.699248" lon="10.538645">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9450461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.699394" lon="10.538195">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9460461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.699555" lon="10.537836">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9470461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.699687" lon="10.537521">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9480461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.699823" lon="10.537430">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9490461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.700020" lon="10.537568">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9500461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.700275" lon="10.537735">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9510461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.700498" lon="10.537829">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9520461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.700763" lon="10.538053">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9530461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.700975" lon="10.538329">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9540461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.701200" lon="10.538423">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9550461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.701367" lon="10.538547">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9560461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.701563" lon="10.538719">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9570461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.701769" lon="10.538870">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9580461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.701930" lon="10.539098">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9590461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.701982" lon="10.539443">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9600461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.702078" lon="10.539729">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9610461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.702254" lon="10.539556">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9620461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.702568" lon="10.539499">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9630461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.702791" lon="10.539293">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9640461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.703088" lon="10.539260">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9650461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.703139" lon="10.539476">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9660461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.703205" lon="10.539804">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9670461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.703353" lon="10.540030">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9680461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.703574" lon="10.540222">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9690461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.703863" lon="10.540172">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9700461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.704071" lon="10.540293">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9710461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.704331" lon="10.540559">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9720461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.704585" lon="10.540848">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9730461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.704883" lon="10.541026">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9740461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.705150" lon="10.541040">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9750461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.705461" lon="10.540920">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9760461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.705604" lon="10.540635">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9770461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.705719" lon="10.540342">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9780461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.705824" lon="10.540113">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9790461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.705964" lon="10.539905">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9800461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.706094" lon="10.539681">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9810461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.706243" lon="10.539817">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9820461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.706454" lon="10.540160">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9830461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.706665" lon="10.540246">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9840461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.706894" lon="10.540317">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9850461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.707271" lon="10.540353">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9860461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.707617" lon="10.540239">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9870461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.707944" lon="10.540076">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9880461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.708253" lon="10.539953">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9890461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.708429" lon="10.540017">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9900461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.708385" lon="10.539665">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9910461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.708342" lon="10.539141">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9920461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.708446" lon="10.538458">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9930461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.708580" lon="10.537980">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9940461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.708693" lon="10.537911">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9950461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.709203" lon="10.538041">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9960461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.709474" lon="10.538123">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9970461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.709874" lon="10.538189">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9980461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.710118" lon="10.538179">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:09.9990461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.710359" lon="10.538336">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:10.0000461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.710415" lon="10.538557">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:10.0010461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.710450" lon="10.538833">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:10.0020461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.710421" lon="10.539060">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:10.0030461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.710451" lon="10.539250">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:10.0040461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.710612" lon="10.539952">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:10.0050461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.710702" lon="10.540409">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:10.0060461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.710825" lon="10.540523">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:10.0070461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.711140" lon="10.540715">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:10.0080461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.711527" lon="10.541085">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:10.0090461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.711669" lon="10.541328">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:10.0100461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.711908" lon="10.541499">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:10.0110461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.712048" lon="10.541703">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:10.0120461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.712052" lon="10.542057">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:10.0130461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.712056" lon="10.542307">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:10.0140461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.712088" lon="10.542742">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:10.0150461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.712124" lon="10.543049">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:10.0160461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.712285" lon="10.543328">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:10.0170461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.712343" lon="10.543551">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:10.0180461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.712436" lon="10.543844">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:10.0190461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.712615" lon="10.544073">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:10.0200461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.712517" lon="10.544283">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:10.0210461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.712473" lon="10.544404">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:10.0220461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+      <trkpt lat="34.712425" lon="10.544602">
+        <ele>0</ele>
+        <time>2022-10-04T09:10:10.0230461Z</time>
+        <desc>Circuit Gonna 2</desc>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
