@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sos/view/details_screen.dart';
 
+import '../models/Place.dart';
 import '../utils/cliper.dart';
+import '../utils/point_list.dart';
 
 class category extends StatefulWidget {
   String? type;
@@ -15,10 +17,19 @@ class category extends StatefulWidget {
 
 class _categoryState extends State<category> {
 
+  List<Place>? Places=<Place>[];
+  bool loading =true;
+  @override
+  void initState() {
+    // TODO: implement initState
+    getData();
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
   Size size = MediaQuery.of(context).size;
-    Widget Customchoice(){
+    Widget Customchoice(Place place){
       return Stack(
           clipBehavior: Clip.none,
         children: [
@@ -55,14 +66,16 @@ class _categoryState extends State<category> {
                 ),
               ]
             ),
-            child: Text(widget.type =="rondo"?"Rondo": "Circuit VTT",style: GoogleFonts.racingSansOne(fontSize: 36),),
+            child: Text(widget.type =="rondo"?"Rondo": place.name ??"",style: GoogleFonts.racingSansOne(fontSize:
+            place.name!.length>9 ?20
+                :25),),
           ),
           Positioned(
               top: 0,
               left: -30,
-              width: 100,
+              width: 95,
               child:widget.type =="rondo"?
-                  Transform.translate(offset: Offset(13,25)
+                  Transform.translate(offset: const Offset(13,25)
       ,child:               Transform.rotate(angle: 710, child: Image.asset("assets/rondo2.png",),      )
                     ,
       )
@@ -78,7 +91,10 @@ class _categoryState extends State<category> {
             top:43,
             right:-12,
            child: InkWell(
-             onTap: ()=> Navigator.push(context, MaterialPageRoute(builder: (ctx)=>Detail_Screen(type:widget.type))),
+             // onTap: (){
+             //   print(Places?.first.coordinates?.first.lat);
+             // },
+             onTap: ()=> Navigator.push(context, MaterialPageRoute(builder: (ctx)=>Detail_Screen(type:widget.type,place:place))),
              child: Container(
                width: 50,
                 height: 50,
@@ -104,7 +120,8 @@ class _categoryState extends State<category> {
     }
     return Scaffold(
       body: SafeArea(
-      child:
+      child:loading ? const Center(child: CircularProgressIndicator(color: Colors.redAccent,),)
+      :
       Stack(
         children: [
           SizedBox(
@@ -172,14 +189,32 @@ class _categoryState extends State<category> {
                                 color: widget.type =="rondo"? Colors.blueGrey: Color(0xffbf2f2f)),),
                           ),
                         ),
-                  Customchoice(),
-                  Customchoice(),
-                  Customchoice(),
-                  Customchoice(),
-                  Customchoice(),
-                  Customchoice(),
-                  Customchoice(),
-                  Customchoice(),
+                  // SizedBox(
+                  //   height: 200,
+                  //   width: MediaQuery.of(context).size.width-80,
+                  //   child: ListView.builder(
+                  //     itemCount: Places?.length
+                  //     , itemBuilder: (BuildContext context, int index) {
+                  //
+                  //       // return Text("aaaaaaaaaaaaaaaaaaaaaaaa");
+                  //       return SizedBox(
+                  //         width: 10,
+                  //           child: Customchoice(Places![index]));
+                  //   },
+                  //
+                  //
+                  //   ),
+                  // ),
+
+                  Customchoice(Places![0]),
+                  Customchoice(Places![1]),
+                  Customchoice(Places![2]),
+                  Customchoice(Places![3]),
+                  Customchoice(Places![4]),
+                  Customchoice(Places![5]),
+                  Customchoice(Places![6]),
+                  Customchoice(Places![7]),
+
 
 
                 ],
@@ -189,6 +224,14 @@ class _categoryState extends State<category> {
         ],
       ) )
     );
+  }
+
+  Future<void> getData() async {
+    Places = await PointList().getdata();
+    setState(() {
+      loading=false;
+    });
+
   }
 
 

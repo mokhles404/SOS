@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:sos/models/Place.dart';
 
 import '../controller/controller.dart';
 import '../utils/widgets.dart';
@@ -9,7 +10,8 @@ import 'map.dart';
 
 class Detail_Screen extends StatefulWidget {
   String? type;
-   Detail_Screen( {Key? key, this.type}) : super(key: key);
+  Place? place;
+   Detail_Screen( {Key? key, this.type, required this.place}) : super(key: key);
 
   @override
   State<Detail_Screen> createState() => _Detail_ScreenState();
@@ -63,7 +65,7 @@ void initState() {
               width: size.width,
 
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.vertical(
+                borderRadius: const BorderRadius.vertical(
                     bottom: Radius.circular(65)
                 ),
                 gradient: LinearGradient(
@@ -71,10 +73,10 @@ void initState() {
                     end: Alignment.bottomCenter,
                     colors: [
                       Colors.transparent,
-                      Color(0xff1b1c27).withOpacity(0.7),
-                      Color(0xff1b1c27)
+                      const Color(0xff1b1c27).withOpacity(0.7),
+                      const Color(0xff1b1c27)
                     ],
-                  stops: [
+                  stops: const [
                     0.5,
                     0.6,
                     1
@@ -91,37 +93,39 @@ void initState() {
                       children: [
                         SizedBox(
                             // width: size.width,
-                            child: Text("El Gonna",style: GoogleFonts.rubik(color: Colors.white,fontSize: 36),textAlign: TextAlign.left,)),
+                            child: Text(widget.place?.name ??"no name",style: GoogleFonts.rubik(color: Colors.white,fontSize: 36),textAlign: TextAlign.left,)),
                         SizedBox(
                             // width: size.width,
                             child:
                           CustomIconButton("    reserver",
                                Icon(Icons.contact_phone,
                                    color:widget.type =="rondo"?
-                                   Color(0xff087aad) : Color(0xffef1446)
+                                   const Color(0xff087aad) : const Color(0xffef1446)
                                    , size: 48),
                               func: () async {
 
                                 await buildShowDialog(context);
 
-                              }, color: widget.type =="rondo"? Color(0xff087aad) : Color(
+                              }, color: widget.type =="rondo"? const Color(0xff087aad) : const Color(
                                   0xffffffff)),
                         )],
                     ),
                     SizedBox(height: size.height*0.03,),
-                    Text("El Gonna est une réserve naturelle tunisienne. Elle appartient au gouvernorat de Sfax,précisément fait partie de la délégation d’Agareb.",style: GoogleFonts.rubik(color: Colors.white.withOpacity(0.9),fontSize: 16)),
+                    SizedBox(
+                      height: size.height*.12,
+                        child: SingleChildScrollView(child: Text(widget.place?.desc ??"",textAlign:TextAlign.justify,style: GoogleFonts.rubik(color: Colors.white.withOpacity(0.9),fontSize:16)))),
                     SizedBox(height: size.height*0.05,),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Icon(Icons.directions_walk_outlined,color: Colors.white,size: 28,),
+                        const Icon(Icons.directions_walk_outlined,color: Colors.white,size: 28,),
                         Column(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("Point de départ",style: GoogleFonts.rubik(color: Colors.white.withOpacity(0.9),fontSize: 16)),
-                            SizedBox(height: 10,),
+                            const SizedBox(height: 10,),
                             Text("Agreb",style: GoogleFonts.rubik(color: Colors.white.withOpacity(0.9),fontSize: 16),)
                           ],
 
@@ -131,13 +135,13 @@ void initState() {
                          width: 1,
                          height: 60,
                        ),
-                        Icon(Icons.social_distance_outlined,color: Colors.white,size: 28,),
+                        const Icon(Icons.social_distance_outlined,color: Colors.white,size: 28,),
                         Column(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("Distance",style: GoogleFonts.rubik(color: Colors.white.withOpacity(0.9),fontSize: 16)),
-                            SizedBox(height: 10,),
+                            const SizedBox(height: 10,),
                             Text("6 KM",style: GoogleFonts.rubik(color: Colors.white.withOpacity(0.9),fontSize: 16),textAlign: TextAlign.start,)
                           ],
 
@@ -158,7 +162,7 @@ void initState() {
                     padding: const EdgeInsets.all(8.0),
                     child: SizedBox(
                         width: size.width,
-                        child: Center(child: Text("Voir le circuit >>>",style: TextStyle(color: Colors.white,fontSize: 24,fontWeight: FontWeight.w200,fontFamily: "Racerz"),))),
+                        child: const Center(child: Text("Voir le circuit >>>",style: TextStyle(color: Colors.white,fontSize: 24,fontWeight: FontWeight.w200,fontFamily: "Racerz"),))),
                   ),
                 )),
             Positioned(
@@ -167,7 +171,7 @@ void initState() {
               child: Container(
                     width: 50,
                     height: 50,
-                    padding: EdgeInsets.symmetric(horizontal: 12),
+                    padding: const EdgeInsets.symmetric(horizontal: 12),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15),
                       color: Colors.white.withOpacity(0.8),
@@ -177,14 +181,14 @@ void initState() {
                      onTap: () {
               Navigator.pop(context);
               },
-                        child: Icon(Icons.arrow_back_ios,size: 24,color: Colors.black,)),
+                        child: const Icon(Icons.arrow_back_ios,size: 24,color: Colors.black,)),
 
                   ),
             ),
             Positioned(
               top: size.height*0.07,
               right: size.width*0.08,
-              child: Container(
+              child: SizedBox(
                     width: 50,
                     height: 50,
 
