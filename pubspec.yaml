@@ -69,6 +69,10 @@ flutter:
   assets:
    - assets/
    - assets/h/
+   - assets/elgonna/
+   - assets/kerknah/
+   - assets/lesolivers/
+   - assets/lessaline/
    - assets/data/tracks.json
   #   - images/a_dot_ham.jpeg
 

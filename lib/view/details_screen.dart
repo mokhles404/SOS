@@ -1,4 +1,6 @@
 
+import 'dart:math';
+
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -32,9 +34,34 @@ void initState() {
   prenomController= TextEditingController();
   emailController= TextEditingController();
   numberController= TextEditingController();
+  correctBgImg();
     super.initState();
   }
-
+  String bgImg="";
+  List<String> elgonna=[
+    "assets/elgonna/1 (1).JPG",
+    "assets/elgonna/1 (2).JPG",
+    "assets/elgonna/1 (3).jpg",
+    "assets/elgonna/1 (4).jpg"
+  ];
+  List<String> kerknah=[
+    "assets/kerknah/2 (1).jpeg",
+    "assets/kerknah/2 (2).jpeg",
+    "assets/kerknah/2 (3).jpeg",
+    "assets/kerknah/2 (4).jpeg",
+  ];
+  List<String> olivers=[
+    "assets/lesolivers/3 (1).jpeg",
+    "assets/lesolivers/3 (1).jpg",
+    "assets/lesolivers/3 (2).jpeg",
+    "assets/lesolivers/3 (2).jpg",
+  ];
+  List<String> saline=[
+   "assets/lessaline/4 (1).JPG",
+   "assets/lessaline/4 (2).JPG",
+   "assets/lessaline/4 (3).JPG",
+   "assets/lessaline/4 (4).JPG",
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -56,7 +83,9 @@ void initState() {
                   bottom: Radius.circular(65)
                 ),
                 image:  DecorationImage(
-                  image: widget.type =="rondo"? const AssetImage("assets/forest2.png") : const AssetImage("assets/bikebg2.png"),
+                  // image: widget.type =="rondo"? const AssetImage("assets/forest2.png") : const AssetImage("assets/bikebg2.png"),
+                  image:   AssetImage(bgImg),
+                  // image:   AssetImage("assets/elgonna/1 (1).JPG"),
                       fit: BoxFit.cover,
                 )
               ),
@@ -209,6 +238,26 @@ void initState() {
     );
   }
 
+
+  correctBgImg(){
+    Random rnd = Random();
+    String name=widget.place!.name!;
+    if(name=="Dorcas" || name=="Halfa" ) {
+      bgImg=elgonna[rnd.nextInt(elgonna.length)];
+    }
+    if(name=="Charfiya " || name=="Palmier" ) {
+      bgImg=kerknah[rnd.nextInt(kerknah.length)];
+    }
+    if(name=="Chemleli " || name=="Younga & Sidi Absa" ) {
+      bgImg=olivers[rnd.nextInt(olivers.length)];
+    }
+    if(name=="Flamant rose " || name=="Sel" ) {
+      bgImg=saline[rnd.nextInt(saline.length)];
+    }
+    setState(() {
+
+    });
+  }
   buildShowDialog(BuildContext context) async {
     showDialog(
                                   context: context,
