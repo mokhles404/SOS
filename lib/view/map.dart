@@ -111,7 +111,8 @@ class _CustomMapState extends State<CustomMap> {
       currentlocation=value;
       });
     });
-    points=polyline_points;
+    // points=polyline_points;
+    points= widget.place!.coordinates!.map<latLng.LatLng>((coord) => latLng.LatLng( double.tryParse(coord.long!)!,double.tryParse(coord.lat!)!,)).toList();
     super.initState();
   }
   @override
@@ -127,14 +128,14 @@ class _CustomMapState extends State<CustomMap> {
 
   @override
   Widget build(BuildContext context) {
-
+    latLng.LatLng exactlyPoint =latLng.LatLng( points.first.latitude,points.first.longitude);
     return Scaffold(
       body: loading || currentlocation== null
           ? const Center(child: CircularProgressIndicator(color: Colors.green,strokeWidth: 3,))
           : FlutterMap(
               mapController: controller,
               options: MapOptions(
-                  center: latLng.LatLng(34.712446, 10.544073),
+                  center:   exactlyPoint,
                   plugins: <MapPlugin>[
                     MarkerClusterPlugin(),
                   ],
@@ -162,7 +163,8 @@ class _CustomMapState extends State<CustomMap> {
                   Marker(
                       width: 100.0,
                       height: 100.0,
-                      point: latLng.LatLng(34.712446, 10.544073),
+                      // point: latLng.LatLng(34.712446, 10.544073),
+                      point:   exactlyPoint,
                       builder: (context) => Container(
                             // color: Colors.black,
                             alignment: Alignment.center,
@@ -172,7 +174,9 @@ class _CustomMapState extends State<CustomMap> {
                               onTap: () {
                                 setState(() {
                                   controller.move(
-                                      latLng.LatLng(34.712446, 10.544073), 16);
+                                      // latLng.LatLng(34.712446, 10.544073), 16);
+                                      exactlyPoint, 16);
+
                                 });
                                 print("pk");
                               },
@@ -337,7 +341,7 @@ class _CustomMapState extends State<CustomMap> {
                 size: 38,
               ),
               func: () => setState(() {
-                    controller.move(latLng.LatLng(34.712446, 10.544073), 16);
+                    controller.move(exactlyPoint, 16);
                   }),
               color: const Color(0xff386c4c)),
           CustomIconButton("Exit",
