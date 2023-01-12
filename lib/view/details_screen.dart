@@ -39,8 +39,6 @@ void initState() {
   }
   String bgImg="";
   List<String> elgonna=[
-    "assets/elgonna/1 (1).JPG",
-    "assets/elgonna/1 (2).JPG",
     "assets/elgonna/1 (3).jpg",
     "assets/elgonna/1 (4).jpg"
   ];
@@ -48,17 +46,14 @@ void initState() {
     "assets/kerknah/2 (1).jpeg",
     "assets/kerknah/2 (2).jpeg",
     "assets/kerknah/2 (3).jpeg",
-    "assets/kerknah/2 (4).jpeg",
   ];
   List<String> olivers=[
     "assets/lesolivers/3 (1).jpeg",
     "assets/lesolivers/3 (1).jpg",
     "assets/lesolivers/3 (2).jpeg",
-    "assets/lesolivers/3 (2).jpg",
   ];
   List<String> saline=[
    "assets/lessaline/4 (1).JPG",
-   "assets/lessaline/4 (2).JPG",
    "assets/lessaline/4 (3).JPG",
    "assets/lessaline/4 (4).JPG",
   ];
@@ -200,22 +195,22 @@ void initState() {
             Positioned(
               top: size.height*0.07,
               left: size.width*0.08,
-              child: Container(
-                    width: 50,
-                    height: 50,
-                    padding: const EdgeInsets.symmetric(horizontal: 12),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
-                      color: Colors.white.withOpacity(0.8),
-                    ),
-                    alignment: Alignment.center,
-                    child: InkWell(
-                     onTap: () {
+              child: InkWell(
+                onTap: () {
               Navigator.pop(context);
               },
-                        child: const Icon(Icons.arrow_back_ios,size: 24,color: Colors.black,)),
-
-                  ),
+                child: Container(
+                  width: 50,
+                  height: 50,
+                  padding: const EdgeInsets.symmetric(horizontal: 12),
+                  decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(15),
+                        color: Colors.white.withOpacity(0.8),
+                      ),
+                  alignment: Alignment.center,
+                  child: const Icon(Icons.arrow_back_ios,size: 24,color: Colors.black,),
+                ),
+              ),
             ),
             Positioned(
               top: size.height*0.07,
