@@ -5,120 +5,123 @@ import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:flutter_map_marker_cluster/flutter_map_marker_cluster.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:latlng/latlng.dart';
 import 'package:latlong2/latlong.dart' as latLng;
 import 'package:location/location.dart';
 import 'package:lottie/lottie.dart' as lt;
 import 'package:sos/controller/controller.dart';
+import 'package:sos/models/route.dart';
 import 'package:sos/utils/constant.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../controller/proximity_service.dart';
 import '../models/Place.dart';
 import '../utils/widgets.dart';
 
 class CustomMap extends StatefulWidget {
   String? type;
   Place? place;
-   CustomMap({Key? key, this.type,this.place}) : super(key: key);
+  CustomMap({Key? key, this.type, this.place}) : super(key: key);
 
   @override
   State<CustomMap> createState() => _CustomMapState();
 }
 
 class _CustomMapState extends State<CustomMap> {
-
   bool tracking = false;
   LocationData? currentlocation;
   MapController controller = MapController();
   bool loading = false;
-   StreamSubscription<LocationData>? locationlistner;
-  late List<latLng.LatLng> points ;
-
+  StreamSubscription<LocationData>? locationlistner;
+  late List<latLng.LatLng> points;
+  MyRoute? route;
 
   Future<LocationData> init_Location() async {
-
-
     LocationData _locationData = await Location().getLocation();
     return _locationData;
-
   }
 
   Future<void> getCurrentLocation() async {
     tracking = !tracking;
-    if(!tracking && locationlistner !=null ) {
+    if (!tracking && locationlistner != null) {
       locationlistner!.cancel();
-      setState(() {
-
-      });
+      setState(() {});
       return;
-
     }
     Location location = Location();
     bool _serviceEnabled;
     PermissionStatus _permissionGranted;
 
-    if(tracking){
-    _serviceEnabled = await location.serviceEnabled();
-    if (!_serviceEnabled) {
-      _serviceEnabled = await location.requestService();
+    if (tracking) {
+      _serviceEnabled = await location.serviceEnabled();
       if (!_serviceEnabled) {
-        return;
+        _serviceEnabled = await location.requestService();
+        if (!_serviceEnabled) {
+          return;
+        }
       }
-    }
 
-    _permissionGranted = await location.hasPermission();
-    if (_permissionGranted == PermissionStatus.denied) {
-      _permissionGranted = await location.requestPermission();
-      if (_permissionGranted != PermissionStatus.granted) {
-        return;
+      _permissionGranted = await location.hasPermission();
+      if (_permissionGranted == PermissionStatus.denied) {
+        _permissionGranted = await location.requestPermission();
+        if (_permissionGranted != PermissionStatus.granted) {
+          return;
+        }
       }
-    }
     }
     loading = true;
-     locationlistner=location.onLocationChanged.listen(cancelOnError: true,(location) {
-        print("location!= currentlocation 1=" +(location!= currentlocation).toString());
-        setState(() {
-        currentlocation =  location;
-
-        });
-        if (tracking) {
-        print(  " currentlocation?.latitude 2 "  +(currentlocation?.latitude ?? "none").toString());
-          controller.move(
-              latLng.LatLng(
-                  currentlocation!.latitude!, currentlocation!.longitude!),
-              16);
-
-        }
-
+    locationlistner =
+        location.onLocationChanged.listen(cancelOnError: true, (location) {
+      print("location!= currentlocation 1=" +
+          (location != currentlocation).toString());
+      setState(() {
+        currentlocation = location;
+      });
+      if (tracking) {
+        print(" currentlocation?.latitude 2 " +
+            (currentlocation?.latitude ?? "none").toString());
+        controller.move(
+            latLng.LatLng(
+                currentlocation!.latitude!, currentlocation!.longitude!),
+            16);
+      }
     });
-     print( "loading 3"+loading.toString());
-    print(  " currentlocation?.latitude =4 "  +(currentlocation?.latitude ?? "hyyyy").toString());
+    print("loading 3" + loading.toString());
+    print(" currentlocation?.latitude =4 " +
+        (currentlocation?.latitude ?? "hyyyy").toString());
     //  print("brrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr");
     loading = false;
-     print("loading5 "+ loading.toString());
-    setState(() {
-
-    });
-
+    print("loading5 " + loading.toString());
+    setState(() {});
   }
-
+  Future<void> getroute(latLng.LatLng start , latLng.LatLng dest) async {
+    ApiProximity api =ApiProximity();
+     route =await api.getRoute(start, dest);
+    setState(() {
+    });
+  }
 
   @override
   void initState() {
-
     init_Location().then((value) {
       setState(() {
-
-      currentlocation=value;
+        currentlocation = value;
       });
     });
     // points=polyline_points;
-    points= widget.place!.coordinates!.map<latLng.LatLng>((coord) => latLng.LatLng( double.tryParse(coord.long!)!,double.tryParse(coord.lat!)!,)).toList();
+    points = widget.place!.coordinates!
+        .map<latLng.LatLng>((coord) => latLng.LatLng(
+              double.tryParse(coord.long!)!,
+              double.tryParse(coord.lat!)!,
+            ))
+        .toList();
     super.initState();
   }
+
   @override
   void dispose() {
     // TODO: implement dispose
-    if(locationlistner != null) {
+    if (locationlistner != null) {
       locationlistner!.cancel();
     }
     // print("dispose: ${locationlistner.isPaused}");
@@ -128,14 +131,19 @@ class _CustomMapState extends State<CustomMap> {
 
   @override
   Widget build(BuildContext context) {
-    latLng.LatLng exactlyPoint =latLng.LatLng( points.first.latitude,points.first.longitude);
+    latLng.LatLng exactlyPoint =
+        latLng.LatLng(points.first.latitude, points.first.longitude);
     return Scaffold(
-      body: loading || currentlocation== null
-          ? const Center(child: CircularProgressIndicator(color: Colors.green,strokeWidth: 3,))
+      body: loading || currentlocation == null
+          ? const Center(
+              child: CircularProgressIndicator(
+              color: Colors.green,
+              strokeWidth: 3,
+            ))
           : FlutterMap(
               mapController: controller,
               options: MapOptions(
-                  center:   exactlyPoint,
+                  center: exactlyPoint,
                   plugins: <MapPlugin>[
                     MarkerClusterPlugin(),
                   ],
@@ -159,12 +167,23 @@ class _CustomMapState extends State<CustomMap> {
                       strokeWidth: 5,
                       points: points)
                 ]),
+                if(route!=null)
+                  PolylineLayerOptions(polylines: [
+                    Polyline(
+                        color: Colors.orangeAccent,
+                        borderColor: Colors.black87,
+                        strokeWidth: 5,
+                        points: route!.waypoints)
+                  ]),
+
+
+
                 MarkerLayerOptions(markers: [
                   Marker(
                       width: 100.0,
                       height: 100.0,
                       // point: latLng.LatLng(34.712446, 10.544073),
-                      point:   exactlyPoint,
+                      point: exactlyPoint,
                       builder: (context) => Container(
                             // color: Colors.black,
                             alignment: Alignment.center,
@@ -175,8 +194,8 @@ class _CustomMapState extends State<CustomMap> {
                                 setState(() {
                                   controller.move(
                                       // latLng.LatLng(34.712446, 10.544073), 16);
-                                      exactlyPoint, 16);
-
+                                      exactlyPoint,
+                                      16);
                                 });
                                 print("pk");
                               },
@@ -201,157 +220,64 @@ class _CustomMapState extends State<CustomMap> {
         ringWidth: 130,
         ringColor: Colors.white60,
         fabColor: const Color(0xff4CACa7),
-        fabOpenIcon: const Icon(Icons.archive),
+        fabOpenIcon: const Icon(Icons.menu,size: 40,),
+        // fabOpenIcon: Image.asset(
+        //   "assets/hathemi/5bd2b381f439b8b24b826fa919abf861.png",
+        //   width: 50,
+        // ),
         children: [
-          // CustomIconButton("reserver",
-          //     const Icon(Icons.contact_phone, color: Color(0xff087aad), size: 38),
-          //     func: () {
-          //
-          //       showDialog(
-          //           context: context,
-          //           builder: (BuildContext context) {
-          //             return AlertDialog(
-          //               content: Stack(
-          //                 clipBehavior: Clip.none, children: <Widget>[
-          //
-          //                   Positioned(
-          //                     right: -40.0,
-          //                     top: -40.0,
-          //                     child: InkResponse(
-          //                       onTap: () {
-          //                         Navigator.of(context).pop();
-          //                       },
-          //                       child: const CircleAvatar(
-          //                         backgroundColor: Color.fromARGB(
-          //                             255, 16, 219, 185),
-          //                         child: Icon(Icons.close,
-          //                             color: Colors.white),
-          //                       ),
-          //                     ),
-          //                   ),
-          //                   SingleChildScrollView(
-          //                     child: Column(
-          //                       mainAxisSize: MainAxisSize.min,
-          //                       children: [
-          //
-          //                          Padding(
-          //                           padding: const EdgeInsets.all(8.0),
-          //                           child: TextField(
-          //                             controller: nomController,
-          //                                   decoration: const InputDecoration(
-          //                                     label: Text("Nom"),
-          //                                     border: UnderlineInputBorder()
-          //                                   ),
-          //                           ),
-          //                         ),
-          //                          Padding(
-          //                           padding: const EdgeInsets.all(8.0),
-          //                           child: TextField(
-          //                             controller: prenomController,
-          //                             decoration: const InputDecoration(
-          //                                     label: Text("Prenom"),
-          //                                     border: UnderlineInputBorder()
-          //                                   ),
-          //                           ),
-          //                         ),
-          //                          Padding(
-          //                           padding: const EdgeInsets.all(8.0),
-          //                           child: TextField(
-          //                             controller: emailController,
-          //                             decoration: const InputDecoration(
-          //                                     label: Text("E_mail"),
-          //                                     border: UnderlineInputBorder()
-          //                                   ),
-          //                           ),
-          //                         ),
-          //                          Padding(
-          //                           padding: const EdgeInsets.all(8.0),
-          //                           child: TextField(
-          //                             controller: numberController,
-          //                             decoration: const InputDecoration(
-          //                                     label: Text("Numéro"),
-          //                                     border: UnderlineInputBorder()
-          //                                   ),
-          //                           ),
-          //                         ),
-          //                           SizedBox(height: 50,),
-          //                         ElevatedButton( onPressed: () async {
-          //
-          //                           if(nomController.text.trim().isNotEmpty && prenomController.text.trim().isNotEmpty && emailController.text.trim().isNotEmpty&& numberController.text.trim().isNotEmpty){
-          //
-          //                                     mycontroller api =mycontroller();
-          //                                    String rep= await api.sendEmail(nom: nomController.text,prenom: prenomController.text,email: emailController.text,number: numberController.text,type: widget.type);
-          //                                               if(rep.substring(0,4) =="Nous"){
-          //                                                 Navigator.of(context).pop();
-          //                                                 nomController.clear();
-          //                                                 prenomController.clear();
-          //                                                 emailController.clear();
-          //                                                 numberController.clear();
-          //                                                 ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Container(
-          //
-          //                                                   child: Text(rep.trim()),
-          //                                                 )));
-          //                                               }else{
-          //                                                 ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Container(
-          //
-          //                                                   child: Text(rep.trim()),
-          //                                                 )));
-          //                                               }
-          //                           }
-          //
-          //                         },
-          //                             style: ButtonStyle(
-          //                               backgroundColor: MaterialStateProperty.all<Color>(Colors.lightGreen),
-          //                             ),
-          //                         child: Text("Reserver",style: GoogleFonts.rubik(fontSize: 24),))
-          //                       ],
-          //                     ),
-          //                   ),
-          //                 ],
-          //               ),
-          //             );
-          //           });
-          //
-          //     }, color: const Color(0xff087aad)),
           CustomIconButton("Urgence",
-              const Icon(Icons.call,color: Color(0xffde2c2c), size: 45),
-              color: const Color(0xffde2c2c), func: () async  {
+              const Icon(Icons.call, color: Color(0xffde2c2c), size: 45),
+              color: const Color(0xffde2c2c), func: () async {
             print("done1");
-                final Uri _url = Uri.parse('tel://22411241');
-                if (! await launchUrl(_url)) {
-                throw 'Could not launch $_url';
-                }
+            final Uri _url = Uri.parse('tel://20353532');
+            if (!await launchUrl(_url)) {
+              throw 'Could not launch $_url';
+            }
             print("done2");
-
-              }),
+          }),
           CustomIconButton(
               !tracking
                   ? "Suivre votre\nposition"
                   : "Désactiver le suivi\nde la position",
-              const Icon(Icons.location_on_rounded,color: Color(0xff4CACa7), size: 38),
+              const Icon(Icons.location_on_rounded,
+                  color: Color(0xff4CACa7), size: 38),
               color: const Color(0xff319da0), func: () {
-      getCurrentLocation();
+            getCurrentLocation();
           }),
 
           CustomIconButton(
-              "Point de \n départ",
+              "Rejoindre \n le circuit",
               const Icon(
                 Icons.my_location,
                 color: Color(0xff386c4c),
                 size: 38,
               ),
-              func: () => setState(() {
-                    controller.move(exactlyPoint, 16);
-                  }),
+              func: () {
+                setState(() {
+                  loading=true;
+                });
+                getroute(latLng.LatLng(currentlocation!.latitude!,
+                    currentlocation!.longitude!), points.first);
+    setState(() {
+          controller.move(latLng.LatLng(currentlocation!.latitude!,currentlocation!.longitude!), 16);
+
+              loading=false;
+
+        });
+                // func: () => setState(() {
+                //       // controller.move(exactlyPoint, 16);
+                //
+                //     }),
+              },
               color: const Color(0xff386c4c)),
           CustomIconButton("Exit",
-              const Icon(Icons.exit_to_app, color: Color(0xff483838), size: 38),
-              func: ()=>Navigator.of(context).pop(), color: Color(0xff483838)),
+              const Icon(Icons.close_outlined, color: Color(0xff483838), size: 38),
+              func: () => Navigator.of(context).pop(),
+              color: Color(0xff483838)),
           // CustomIconButton("Recenter",Icon(Icons.my_location)),
         ],
       ),
     );
   }
 }
-
-

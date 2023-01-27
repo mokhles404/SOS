@@ -15,65 +15,68 @@ class _WelcomePageState extends State<WelcomePage> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    return Scaffold(
-      body: Column(
-        children: [
-          Expanded(
-              child: InkWell(
-                onTap: ()=> Navigator.of(context).push(MaterialPageRoute(builder: (context)=> category(type: "VTT",))),
-                child: Container(
-            width: size.width,
-            decoration: const BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage("assets/vtt1.png"), fit: BoxFit.cover)),
-            child:  Center(
-                  child: Text("VTT",
-                      style: GoogleFonts.racingSansOne(
-                          color: Colors.white60,
-                          fontSize: 48,
-                          fontWeight: FontWeight.w900))),
-          ),
-              )),
-          Container(
+    return SafeArea(
+      child: Scaffold(
+        body: Column(
+          children: [
+            Expanded(
+                child: InkWell(
+                  onTap: ()=> Navigator.of(context).push(MaterialPageRoute(builder: (context)=>  category(type: "VTT",))),
+                  child: Container(
               width: size.width,
-              alignment: Alignment.center,
-              decoration:  BoxDecoration(
-                  color: Colors.grey.shade300,
-                  // gradient: LinearGradient(
-                  //   begin: Alignment.topCenter,
-                  //   end: Alignment.bottomCenter,
-                  //   colors: [
-                  //     Color(0xff350F01),
-                  //     Color(0xffA0ABAF),
-                  //   ],
-                  //   // stops: [
-                  //   //
-                  //   // ]
-                  // )
-              ),
-              height: 60,
-              child: CustomText()),
-          Expanded(
-              child: InkWell(
-                onTap: ()=> Navigator.of(context).push(MaterialPageRoute(builder: (context)=> category(type: "rondo",))),
-
-                child: Container(
-                  width: size.width,
-                  decoration: const BoxDecoration(
-                      image: DecorationImage(
-                          colorFilter: ColorFilter.srgbToLinearGamma(),
-
-                          image: AssetImage("assets/rondo.png"), fit: BoxFit.cover)),
-                  child:  Center(
-                      child: Text("randonnée",
-                          style: GoogleFonts.racingSansOne(
-                              color: Colors.white60,
-                              fontSize: 48,
-                              fontWeight: FontWeight.w900))),
+              decoration: const BoxDecoration(
+                    image: DecorationImage(
+                        // colorFilter: ColorFilter.srgbToLinearGamma(),
+                        image: AssetImage("assets/image/mountain-biking-illustration-with-cycling-down-mountains-sports-silhouette-hand-drawn_2175-10702.jpg"), fit: BoxFit.cover)),
+              child:  Center(
+                    child: Text("VTT",
+                        style: GoogleFonts.racingSansOne(
+                            color: Colors.white60,
+                            fontSize: 48,
+                            fontWeight: FontWeight.w900))),
+            ),
+                )),
+            Container(
+                width: size.width,
+                alignment: Alignment.center,
+                decoration:  BoxDecoration(
+                    color: Colors.grey.shade300,
+                    // gradient: LinearGradient(
+                    //   begin: Alignment.topCenter,
+                    //   end: Alignment.bottomCenter,
+                    //   colors: [
+                    //     Color(0xff350F01),
+                    //     Color(0xffA0ABAF),
+                    //   ],
+                    //   // stops: [
+                    //   //
+                    //   // ]
+                    // )
                 ),
-              )),
+                height: 60,
+                child: CustomText()),
+            Expanded(
+                child: InkWell(
+                  onTap: ()=> Navigator.of(context).push(MaterialPageRoute(builder: (context)=> category(type: "rondo",))),
 
-        ],
+                  child: Container(
+                    width: size.width,
+                    decoration: const BoxDecoration(
+                        image: DecorationImage(
+                            colorFilter: ColorFilter.srgbToLinearGamma(),
+
+                            image: AssetImage("assets/image/349-3499594_mountaineering-euclidean-vector-rock-climbing-mountain-climbing-png.png"), fit: BoxFit.cover)),
+                    child:  Center(
+                        child: Text("randonnée",
+                            style: GoogleFonts.racingSansOne(
+                                color: Colors.white60,
+                                fontSize: 48,
+                                fontWeight: FontWeight.w900))),
+                  ),
+                )),
+
+          ],
+        ),
       ),
     );
   }

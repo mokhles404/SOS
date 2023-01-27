@@ -1,7 +1,25 @@
 
 import 'package:latlong2/latlong.dart' as latLng;
 
-
+List<String> elgonnaImg=[
+  "assets/elgonna/1 (3).jpg",
+  "assets/elgonna/1 (4).jpg"
+];
+List<String> kerknahImg=[
+  "assets/kerknah/2 (1).jpeg",
+  "assets/kerknah/2 (2).jpeg",
+  "assets/kerknah/2 (3).jpeg",
+];
+List<String> oliversImg=[
+  "assets/lesolivers/3 (1).jpeg",
+  "assets/lesolivers/3 (1).jpg",
+  "assets/lesolivers/3 (2).jpeg",
+];
+List<String> salineImg=[
+  "assets/lessaline/4 (1).JPG",
+  "assets/lessaline/4 (3).JPG",
+  "assets/lessaline/4 (4).JPG",
+];
 
  List<latLng.LatLng> polyline_points = <latLng.LatLng>[
 latLng.LatLng(34.712446, 10.544073),

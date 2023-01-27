@@ -2,11 +2,17 @@
 import 'dart:math';
 
 import 'package:auto_size_text/auto_size_text.dart';
+import 'package:awesome_dialog/awesome_dialog.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:latlong2/latlong.dart';
+import 'package:lottie/lottie.dart';
 import 'package:sos/models/Place.dart';
 
 import '../controller/controller.dart';
+import '../controller/proximity_service.dart';
+import '../utils/constant.dart';
 import '../utils/widgets.dart';
 import 'map.dart';
 
@@ -28,6 +34,10 @@ class _Detail_ScreenState extends State<Detail_Screen> {
   late TextEditingController emailController;
   late TextEditingController numberController;
 
+
+
+
+
 @override
 void initState() {
   nomController= TextEditingController();
@@ -38,25 +48,8 @@ void initState() {
     super.initState();
   }
   String bgImg="";
-  List<String> elgonna=[
-    "assets/elgonna/1 (3).jpg",
-    "assets/elgonna/1 (4).jpg"
-  ];
-  List<String> kerknah=[
-    "assets/kerknah/2 (1).jpeg",
-    "assets/kerknah/2 (2).jpeg",
-    "assets/kerknah/2 (3).jpeg",
-  ];
-  List<String> olivers=[
-    "assets/lesolivers/3 (1).jpeg",
-    "assets/lesolivers/3 (1).jpg",
-    "assets/lesolivers/3 (2).jpeg",
-  ];
-  List<String> saline=[
-   "assets/lessaline/4 (1).JPG",
-   "assets/lessaline/4 (3).JPG",
-   "assets/lessaline/4 (4).JPG",
-  ];
+  bool repeatIt=true;
+
 
   @override
   Widget build(BuildContext context) {
@@ -65,7 +58,8 @@ void initState() {
       extendBodyBehindAppBar: true,
 
       body: Container(
-        color:widget.type =="rondo"? Colors.blueGrey: const Color(0xfff35d5c) ,
+        // color:widget.type =="rondo"? Colors.blueGrey: const Color(0xff0086a9) ,
+        color: const Color(0xff0086a9) ,
         height: size.height,
         width: size.width,
         child: Stack(
@@ -112,7 +106,7 @@ void initState() {
                 padding: const EdgeInsets.symmetric(horizontal: 35),
                 child: Column(
                   children: [
-                    SizedBox(height: size.height*0.5,),
+                    SizedBox(height: size.height*0.46,),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -123,11 +117,8 @@ void initState() {
                         SizedBox(
                             // width: size.width,
                             child:
-                          CustomIconButton("    reserver",
-                               Icon(Icons.contact_phone,
-                                   color:widget.type =="rondo"?
-                                   const Color(0xff087aad) : const Color(0xffef1446)
-                                   , size: 48),
+                          CustomIconButton("reserver",
+                              null,
                               func: () async {
 
                                 await buildShowDialog(context);
@@ -146,7 +137,11 @@ void initState() {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Icon(Icons.directions_walk_outlined,color: Colors.white,size: 28,),
+                        // const Icon(Icons.directions_walk_outlined,color: Colors.white,size: 28,),
+                        Padding(
+                          padding:  const EdgeInsets.only(top: 12),
+                          child: Image.asset("assets/image/difficulty icon.png",width: 40,color: Colors.white,),
+                        ),
                         Column(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -162,7 +157,8 @@ void initState() {
                          width: 1,
                          height: 60,
                        ),
-                        const Icon(Icons.social_distance_outlined,color: Colors.white,size: 28,),
+                        // const Icon(Icons.social_distance_outlined,color: Colors.white,size: 28,),
+                        Image.asset("assets/icon/distance.png",width: 35,color: Colors.white,),
                         Column(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -189,7 +185,7 @@ void initState() {
                     padding: const EdgeInsets.all(8.0),
                     child: SizedBox(
                         width: size.width,
-                        child: const Center(child: Text("Voir le circuit >>>",style: TextStyle(color: Colors.white,fontSize: 24,fontWeight: FontWeight.w200,fontFamily: "Racerz"),))),
+                        child: const Center(child: Text("Rejoindre le circuit ",style: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.w200,fontFamily: "Racerz"),))),
                   ),
                 )),
             Positioned(
@@ -215,16 +211,62 @@ void initState() {
             Positioned(
               top: size.height*0.07,
               right: size.width*0.08,
-              child: SizedBox(
-                    width: 50,
-                    height: 50,
+              child: InkWell(
+                onTap: () {
+                  setState(() {
+                    repeatIt=false;
+                  });
+                  AwesomeDialog(
+                      context: context,
+                      dialogType: DialogType.infoReverse,
+                      animType: AnimType.rightSlide,
+                      // btnCancelOnPress: () {},
+                    // btnCancel: null,
+                  body: Column(
+                    children: [
+                     const Text("Contact",style: TextStyle(fontWeight:FontWeight.bold,fontSize: 18 ),),
 
-                    child: ClipRRect(
-                        borderRadius: BorderRadius.circular(15),
-                        child: Image.asset("assets/pdp.jpg",fit: BoxFit.cover,))
+                      const SizedBox(height: 27,),
+                      contactText(Icons.home, "complexe des jeunes, Sfax, Tunisia, 3049", "Address"),
+                      SizedBox(height: size.height*0.03,),
+                      contactText(Icons.email, "sfaxoutdoorsports@gmail.com", "Email"),
+                      SizedBox(height: size.height*0.03,),
+                      contactText(Icons.call, "20353532", "téléphone"),
+                      const SizedBox(height: 10,),
 
+
+                    ],
                   ),
+                  btnOkOnPress: () {},
+                  ).show();
+              },
+                child: Container(
+                  width: 50,
+                  height: 50,
+                  // padding: const EdgeInsets.symmetric(horizontal: 12),
+                  decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(15),
+                        color: Colors.white.withOpacity(0.8),
+                      ),
+                  alignment: Alignment.center,
+                  // child: const Icon(Icons.info_outlined,size: 24,color: Colors.blueAccent,),
+                  child: Lottie.asset("assets/information.json",width: 40,fit: BoxFit.fill,repeat: repeatIt),
+                ),
+              ),
             ),
+            // Positioned(
+            //   top: size.height*0.07,
+            //   right: size.width*0.08,
+            //   child: SizedBox(
+            //         width: 50,
+            //         height: 50,
+            //
+            //         child: ClipRRect(
+            //             borderRadius: BorderRadius.circular(15),
+            //             child: Image.asset("assets/pdp.jpg",fit: BoxFit.cover,))
+            //
+            //       ),
+            // ),
 
           ],
         ),
@@ -233,21 +275,46 @@ void initState() {
     );
   }
 
+  Padding contactText(IconData icon ,String title,String subtitle,{void Function()? func }){
+    return Padding(
+      padding:  EdgeInsets.symmetric(horizontal: 12),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+           Icon(icon,color: Colors.green,),
+          SizedBox(width: 10,),
+          RichText(text:  TextSpan(
+            recognizer: TapGestureRecognizer()
+              ..onTap=func,
+              text: title,
+              style: TextStyle(color: Colors.black,fontSize: 10),
+              children: [
+                TextSpan(text: '\n\t\t\t $subtitle ', style: TextStyle(fontSize: 8,color: Colors.grey)),
+
+              ]
+
+          ),
+
+          )
+        ],
+      ),
+    );
+  }
 
   correctBgImg(){
     Random rnd = Random();
     String name=widget.place!.name!;
     if(name=="Dorcas" || name=="Halfa" ) {
-      bgImg=elgonna[rnd.nextInt(elgonna.length)];
+      bgImg=elgonnaImg[rnd.nextInt(elgonnaImg.length)];
     }
     if(name=="Charfiya " || name=="Palmier" ) {
-      bgImg=kerknah[rnd.nextInt(kerknah.length)];
+      bgImg=kerknahImg[rnd.nextInt(kerknahImg.length)];
     }
     if(name=="Chemleli " || name=="Younga & Sidi Absa" ) {
-      bgImg=olivers[rnd.nextInt(olivers.length)];
+      bgImg=oliversImg[rnd.nextInt(oliversImg.length)];
     }
     if(name=="Flamant rose " || name=="Sel" ) {
-      bgImg=saline[rnd.nextInt(saline.length)];
+      bgImg=salineImg[rnd.nextInt(salineImg.length)];
     }
     setState(() {
 

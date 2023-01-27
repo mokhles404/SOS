@@ -1,15 +1,11 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:sos/view/details_screen.dart';
-
 import '../models/Place.dart';
-import '../utils/cliper.dart';
 import '../utils/point_list.dart';
+import '../utils/widgets.dart';
 
 class category extends StatefulWidget {
-  String? type;
-   category({Key? key,this.type}) : super(key: key);
+ final String? type;
+   const category({Key? key,this.type}) : super(key: key);
 
   @override
   State<category> createState() => _categoryState();
@@ -30,121 +26,29 @@ class _categoryState extends State<category> {
   @override
   Widget build(BuildContext context) {
   Size size = MediaQuery.of(context).size;
-    Widget Customchoice(Place place){
-      return InkWell(
-        onTap: ()=> Navigator.push(context, MaterialPageRoute(builder: (ctx)=>Detail_Screen(type:widget.type,place:place))),
 
-        child: Stack(
-            clipBehavior: Clip.none,
-          children: [
-            Container(
-              margin: const EdgeInsets.symmetric(vertical: 30),
-              // padding: EdgeInsets.only(left: 50),
-              alignment: Alignment.center,
-              width: size.width*0.8,
-              height: size.height*0.1,
-              decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(16),
-                gradient: const LinearGradient(
-                  begin: Alignment(-1,-1),
-                  end: Alignment(1,1),
-                  colors: [
-                   Color(0xFFE6E6E6),
-                   Color(0xFFFFFFFF)
-                  ]
-                ),
-                boxShadow: const [
-                  BoxShadow(
-                    color: Color(0xFFCCCCCC),
-                    offset: Offset(20,20),
-                    spreadRadius: -25,
-                    blurRadius: 60
-                  ),
-                  BoxShadow(
-                    color: Color(0xFFFFFFFF),
-                    offset: Offset(-20,-20),
-                    blurRadius: 60,
-                    spreadRadius: -20,
-
-                  ),
-                ]
-              ),
-              child: Text( place.name ??"",style: GoogleFonts.racingSansOne(fontSize:
-              place.name!.length>9 ?20
-                  :25),),
-            ),
-            Positioned(
-                top: 0,
-                left: -30,
-                width: 95,
-                child:widget.type =="rondo"?
-                    Transform.translate(offset: const Offset(13,25)
-        ,child:               Transform.rotate(angle: 710, child: Image.asset("assets/h/Hiking Information Board Old.H03.2k.png",),      )
-                      ,
-        )
-
-                // Transform.rotate(angle: 710, child: Image.asset("assets/rondo2.png",),      )
-
-
-                      :Transform.rotate(angle: 660 ,child:Image.asset("assets/vtt.png",),)
-
-
-        ),
-            Positioned(
-              top:43,
-              right:-12,
-             child: InkWell(
-               // onTap: (){
-               //   print(Places?.first.coordinates?.first.lat);
-               // },
-               onTap: ()=> Navigator.push(context, MaterialPageRoute(builder: (ctx)=>Detail_Screen(type:widget.type,place:place))),
-               child: Container(
-                 width: 50,
-                  height: 50,
-                  decoration:BoxDecoration(
-                    boxShadow: const [
-                      BoxShadow(
-                        color: Color(0xffC9A2A299),
-                        offset: Offset(10,10),
-                        blurRadius: 20
-                      )
-                    ],
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(60)
-                  ),
-                 child: const Icon(Icons.arrow_forward_ios),
-                ),
-             )
-            )
-
-          ],
-        ),
-      );
-
-    }
   List<Widget> choice= [
-    Customchoice(Places![0]),
-    Customchoice(Places![1]),
-    Customchoice(Places![2]),
-    Customchoice(Places![3]),
-    Customchoice(Places![4]),
-    Customchoice(Places![5]),
-    Customchoice(Places![6]),
-    Customchoice(Places![7]),
+    Customchoice(Places![0],size,widget.type,context),
+    Customchoice(Places![1],size,widget.type,context),
+    Customchoice(Places![2],size,widget.type,context),
+    Customchoice(Places![3],size,widget.type,context),
+    Customchoice(Places![4],size,widget.type,context),
+    Customchoice(Places![5],size,widget.type,context),
+    Customchoice(Places![6],size,widget.type,context),
+    Customchoice(Places![7],size,widget.type,context),
   ];
 
   List<Widget> choicevtt= [
-    Customchoice(Places![1]),
-    Customchoice(Places![2]),
-    Customchoice(Places![4]),
-    Customchoice(Places![6]),
+    Customchoice(Places![1],size,widget.type,context),
+    Customchoice(Places![2],size,widget.type,context),
+    Customchoice(Places![4],size,widget.type,context),
+    Customchoice(Places![6],size,widget.type,context),
   ];
     return Scaffold(
       body: SafeArea(
-      child:loading ? const Center(child: CircularProgressIndicator(color: Colors.redAccent,),)
-      :
-      Stack(
+      child:loading
+                  ? const Center(child: CircularProgressIndicator(color: Colors.redAccent,),)
+                  : Stack(
         children: [
           SizedBox(
             width: size.width,
@@ -152,24 +56,29 @@ class _categoryState extends State<category> {
             child: Row(
               children: [
 
-                Expanded(
-                  child: Container(
-
-                    color: widget.type =="rondo"?Colors.blueGrey: Color(0xffEB394D),
-                  ),
-                ),
+                // Expanded(
+                //   child: Container(
+                //
+                //     color: widget.type =="rondo"?Colors.blueGrey: Color(0xff817d46),
+                //   ),
+                // ),
                  Expanded(
                    flex: 2,
                    child: Container(
-                   decoration: const BoxDecoration(
-                     gradient: LinearGradient(
-                         begin: Alignment(-1,-1),
-                         end: Alignment(1,1),
-                         colors: [
-                           Color(0xFFE6E6E6),
-                           Color(0xFFFFFFFF)
-                         ]
-                     ),
+                   decoration:  BoxDecoration(
+                       image: DecorationImage(image: widget.type =="rondo" ? const AssetImage("assets/image/bg (2).jpg") :const AssetImage("assets/image/bg (3).jpg")
+                           ,fit: BoxFit.cover
+                       ),
+
+                     //   gradient: LinearGradient(
+                     //     begin: Alignment(-1,-1),
+                     //     end: Alignment(1,1),
+                     //     colors: [
+                     //       // Color(0xFFb8c2aa),
+                     //       Color(0xff817d46),
+                     //       Color(0xff618cd5)
+                     //     ]
+                     // ),
 
                    ),
                 ),
@@ -178,39 +87,44 @@ class _categoryState extends State<category> {
               ],
             ),
           ),
-          Container(
+          SizedBox(
             width: size.width,
             height: size.height,
             child: SingleChildScrollView(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                mainAxisAlignment: MainAxisAlignment.end,
+
                 children: [
+                    SizedBox(height: size.height*.1,),
 
-                  ClipPath(
-                          clipper: ClipPathClass(),
-
-                          child: Container(
-                            margin: const EdgeInsets.only(bottom: 20),
-                            padding: const EdgeInsets.only(right: 20),
-                            decoration: const BoxDecoration(
-                              gradient: LinearGradient(
-                                  begin: Alignment(-1,-1),
-                                  end: Alignment(1,1),
-                                  colors: [
-                                    Color(0xFFE6E6E6),
-                                    Color(0xFFFFFFFF)
-                                  ]
-                              ),
-
-                            ),
-                            width: size.width,
-                            height: size.height*0.2,
-                            alignment: Alignment.center,
-                            child: Text("Choisissez l'aventure",style: GoogleFonts.radioCanada(fontSize: 30,fontWeight: FontWeight.w900,
-                                color: widget.type =="rondo"? Colors.blueGrey: Color(0xffbf2f2f)),),
-                          ),
-                        ),
+                  // ClipPath(
+                  //         clipper: ClipPathClass(),
+                  //
+                  //         child: Container(
+                  //           margin: const EdgeInsets.only(bottom: 20),
+                  //           padding: const EdgeInsets.only(right: 20),
+                  //           decoration: const BoxDecoration(
+                  //             // gradient: LinearGradient(
+                  //             //     begin: Alignment(-1,-1),
+                  //             //     end: Alignment(1,1),
+                  //             //     colors: [
+                  //             //       Color(0xFFE6E6E6),
+                  //             //       Color(0xFFFFFFFF)
+                  //             //     ]
+                  //             // ),
+                  //             image: DecorationImage(image: AssetImage("assets/image/5.jpg")
+                  //             ,fit: BoxFit.cover
+                  //             )
+                  //
+                  //           ),
+                  //           width: size.width,
+                  //           height: size.height*0.3,
+                  //           alignment: Alignment.center,
+                  //           // child: Text("Choisissez l'aventure",style: GoogleFonts.radioCanada(fontSize: 30,fontWeight: FontWeight.w900,
+                  //           //     color: widget.type =="rondo"? Colors.blueGrey: Color(0xffbf2f2f)),),
+                  //         ),
+                  //       ),
                   // SizedBox(
                   //   height: 200,
                   //   width: MediaQuery.of(context).size.width-80,
@@ -231,7 +145,6 @@ class _categoryState extends State<category> {
                     ...choice
                       else
                       ...choicevtt
-
 
 
                 ],
